@@ -1,0 +1,50 @@
+{
+  "name": "cerebral-computed",
+  "version": "0.1.0",
+  "description": "Package to let cerebral view packages expose computed feature",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "nodeunit tests",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerebral/cerebral-computed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerebral/cerebral-computed/issues"
+  },
+  "homepage": "https://github.com/cerebral/cerebral-computed#readme",
+  "devDependencies": {
+    "commitizen": "^2.5.0",
+    "conventional-changelog": "0.0.17",
+    "cz-customizable": "^2.7.1",
+    "ghooks": "^1.0.3",
+    "semantic-release": "^4.3.5",
+    "standard": "^5.4.1",
+    "validate-commit-msg": "^1.1.1"
+  },
+  "peerDependencies": {
+    "cerebral": "^0.33.0 || ^0.34.0-0",
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "release": {
+    "analyzeCommits": "./sr-prerelease.js"
+  },
+  "dependencies": {
+    "lodash.get": "^4.0.0"
+  }
+}
