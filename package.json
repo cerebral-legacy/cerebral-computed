@@ -1,6 +1,6 @@
 {
   "name": "cerebral-computed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Package to let cerebral view packages expose computed feature",
   "main": "index.js",
   "scripts": {
@@ -46,5 +46,9 @@
   },
   "dependencies": {
     "lodash.get": "^4.0.0"
-  }
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ]
 }
